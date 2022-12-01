@@ -8,3 +8,5 @@ document.getElementById('button').onclick = () => {
   listOfActivities.push(input.value);
   console.log(listOfActivities);
 };
+
+
