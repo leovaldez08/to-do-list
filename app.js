@@ -5,10 +5,17 @@ var input = document.getElementById('input');
 var toDoList = document.getElementById('todolist');
 
 document.getElementById('button').onclick = () => {
-  listOfActivities.push(input.value);
-  console.log(listOfActivities);
-  input.value = ""
 
+  var task = document.getElementById("input").value
+  if (task == ""){
+      window.open("index.html", "_self")
+      alert("Please enter your task to add it 🙂")
+  }
+  else{
+    listOfActivities.push(input.value);
+    console.log(listOfActivities);
+    input.value = ""
+  }
   showList();
 }
 
